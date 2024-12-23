@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <title>Gaming Survey</title> 
+    <link rel="stylesheet" href="gaming-survey.css"> 
+  </head> 
+  <body> 
+    <h1 id="title">Gaming Survey</h1> 
+    
+    <p id="description"> Help us improve the gaming experience by sharing your favorite games and snacks! </p> 
+    
+    <form id="survey-form">
+       <!-- Name --> 
+        <label id="name-label" for="name">
+           Name 
+           <input id="name" type="text" placeholder="Enter your name" required> 
+          </label> 
+           
+      <!-- Email --> 
+        <label id="email-label" for="email"> 
+          Email 
+          <input id="email" type="email" placeholder="Enter your Email" required> 
+        </label> 
+        
+      <!-- Age --> 
+       <label id="number-label" for="number"> 
+        Age (optional) 
+        <input id="number" type="number" min="13" max="100" placeholder="Age"> 
+      </label> 
+      
+      <!-- Gaming Preference --> 
+       <label for="dropdown"> 
+        Which option best describes your gaming preference? 
+        <select id="dropdown"> 
+          <option value="disabled selected">Select your preference</option> 
+          <option value="pc">PC</option> <option value="console">Console</option> 
+        </select> 
+      </label> 
+      
+      <!-- Gaming Session Duration --> 
+       <label for="gaming-session"> 
+        How long do you typically game in a session? 
+      </label> <label for="less-than-an-hour"> 
+        <input type="radio" id="less-than-an-hour" value="less-than-an-hour" name="gaming-session"> 
+        Less than an hour 
+      </label> 
+      <label for="1-2 hours"> 
+        <input type="radio" id="1-2 hours" value="1-2 hours" name="gaming-session">
+         1-2 hours 
+        </label> 
+        <label for="3-5 hours"> 
+          <input type="radio" id="3-5 hours" value="3-5 hours" name="gaming-session"> 
+          3-5 hours 
+        </label> 
+        <label for="5+ hours"> 
+          <input type="radio" id="5+ hours" value="5+ hours" name="gaming-session"> 
+          5+ hours 
+        </label> 
+       
+        <!-- Game Genres --> 
+         <label> Which game genres do you enjoy playing? (Select all that apply) </label> 
+         <label for="rpg"> 
+          <input type="checkbox" id="rpg" value="RPG"> 
+          Role-Playing Games (RPG) 
+        </label> 
+        <label for="racing"> 
+          <input type="checkbox" id="racing" value="Racing"> 
+          Racing Games 
+        </label> 
+        <label for="fps"> 
+          <input type="checkbox" id="fps" value="FPS"> 
+          First-Person Shooters (FPS) 
+        </label> 
+        <label for="strategy"> 
+          <input type="checkbox" id="strategy" value="Strategy">
+           Strategy 
+          </label> 
+           <label for="open-world"> 
+            <input type="checkbox" id="open-world" value="Open-World"> 
+            Open-World Games
+           </label> 
+            <label for="puzzle"> 
+              <input type="checkbox" id="puzzle" value="Puzzle"> 
+              Puzzle Games 
+            </label> 
+            <label for="sports"> 
+              <input type="checkbox" id="sports" value="Sports"> 
+              Sports Games 
+            </label> 
+            <label for="adventure"> 
+              <input type="checkbox" id="adventure" value="Adventure"> 
+              Adventure Games 
+            </label> 
+            <label for="simulation"> 
+              <input type="checkbox" id="simulation" value="Simulation"> 
+              Simulation Games 
+            </label> 
+            <label for="fighting"> 
+              <input type="checkbox" id="fighting" value="Fighting"> 
+              Fighting Games 
+            </label> 
+        
+        <!-- Snack and Drink --> 
+         <label> 
+          What's your go-to snack and drink while gaming? 
+          <textarea placeholder="Describe your favorite snack and drink while gaming..."></textarea> 
+        </label> 
+        
+        <!-- Submit Button --> 
+         <button id="submit" type="submit">Submit</button> 
+        </form> 
+      </body> 
+      </html>
